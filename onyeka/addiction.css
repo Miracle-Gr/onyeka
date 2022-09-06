@@ -1,0 +1,47 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.menu-toggler {
+    cursor: pointer;
+}
+.connect-wallet {
+    cursor: pointer;
+}
+.lang-switch {
+    z-index: 99;
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    background-color: #1A1A1A;
+    border-radius: 9999px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    row-gap: 10px;
+    padding: 8px 10px;
+}
+.lang-switch > .divider {
+    width: 2px;
+    background-color: white;
+    opacity: 0.1;
+    border-radius: 999px;
+}
+
+.lang-switch > .lang {
+    color: rgba(255, 255, 255, 0.6);
+    padding: 2px 6px;
+    border-radius: 999px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.lang-switch > .lang.active {
+    background-color: rgba(255, 255, 255, 0.1);
+}
